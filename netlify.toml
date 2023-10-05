@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "ls -la ./node_modules/cypress/node_modules && cypress install && astro build"
+  command = "ls -la ./node_modules/cypress/node_modules && ls ./node_modules/cypress/node_modules/log_symbols/node_modules && cypress install && astro build"
   functions = "netlify/functions"
   publish = "dist"
 
