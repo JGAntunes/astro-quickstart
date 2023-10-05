@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "find /opt/buildhome -name is-unicode-supported && find /opt/build -name is-unicode-supported && cypress install && astro build"
+  command = "find /opt/buildhome -name is-unicode-supported && find /opt/build -name is-unicode-supported && cat /opt/build/repo/node_modules/is-unicode-supported/package.json && cypress install && astro build"
   functions = "netlify/functions"
   publish = "dist"
 
